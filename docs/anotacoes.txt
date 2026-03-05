@@ -1,0 +1,31 @@
+===== ANOTAÇÕES DE LINUX =====
+
+NAVEGAÇÃO:
+- pwd          → mostra a pasta atual
+- ls -l        → lista com detalhes
+- cd pasta     → entra na pasta
+- cd ..        → volta uma pasta
+- cd ~         → vai para a pasta pessoal
+
+ARQUIVOS:
+- touch        → cria arquivo vazio
+- echo > arquivo  → cria arquivo com conteúdo
+- echo >> arquivo → adiciona ao final
+- cat          → mostra conteúdo
+- cp           → copia arquivo
+- mv           → move ou renomeia
+- rm           → remove permanentemente
+
+PERMISSÕES:
+- chmod 755    → rwxr-xr-x (scripts)
+- chmod 644    → rw-r--r-- (arquivos normais)
+- chmod 600    → rw------- (arquivos secretos)
+
+PROCESSOS:
+- ps aux       → lista todos os processos
+- grep         → filtra resultados
+- pipe |       → encadeia comandos
+- wc -l        → conta linhas
+
+SISTEMA:
+- sudo         → executa
