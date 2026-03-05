@@ -1,6 +1,6 @@
 # 🐧 Meu Projeto Linux
 
-**Autor:** Lucas Infra
+**Autor:** Lucas Dev
 **Data:** Março 2026
 
 ## 📋 Descrição
