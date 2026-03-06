@@ -1,10 +1,16 @@
 #!/bin/bash
-echo "===== INFORMAÇÕES DO SISTEMA ====="
-echo "Usuário: $(whoami)"
-echo "Pasta atual: $(pwd)"
-echo "Data: $(date)"
-echo "Memória:"
+
+# Cores
+VERDE='\033[0;32m'
+AZUL='\033[0;34m'
+RESET='\033[0m'
+
+echo -e "${AZUL}===== INFORMAÇÕES DO SISTEMA =====${RESET}"
+echo -e "${VERDE}Usuário:${RESET} $(whoami)"
+echo -e "${VERDE}Pasta atual:${RESET} $(pwd)"
+echo -e "${VERDE}Data:${RESET} $(date)"
+echo -e "${VERDE}Memória:${RESET}"
 free -h
-echo "Disco:"
+echo -e "${VERDE}Disco:${RESET}"
 df -h /
-echo "=================================="
+echo -e "${AZUL}==================================${RESET}"
