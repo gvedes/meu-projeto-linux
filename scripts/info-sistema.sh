@@ -8,7 +8,7 @@ RESET='\033[0m'
 echo -e "${AZUL}===== INFORMAÇÕES DO SISTEMA =====${RESET}"
 echo -e "${VERDE}Usuário:${RESET} $(whoami)"
 echo -e "${VERDE}Pasta atual:${RESET} $(pwd)"
-echo -e "${VERDE}Data:${RESET} $(date)"
+echo -e "${VERDE}Data:${RESET} $(date '+%d/%m/%Y %H:%M:%S')"
 echo -e "${VERDE}Memória:${RESET}"
 free -h
 echo -e "${VERDE}Disco:${RESET}"
