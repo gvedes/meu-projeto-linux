@@ -1,0 +1,29 @@
+name: CI - Verificação do Projeto
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v3
+
+      - name: Verificar scripts
+        run: |
+          echo "Verificando scripts..."
+          ls -la scripts/
+          bash -n scripts/info-sistema.sh
+          bash -n scripts/backup.sh
+          echo "Scripts OK!"
+
+      - name: Verificar documentação
+        run: |
+          echo "Verificando documentação..."
+          ls -la docs/
+          echo "Documentação OK!"
