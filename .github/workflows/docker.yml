@@ -12,5 +12,9 @@ jobs:
       - name: Baixar o código
         uses: actions/checkout@v3
 
+      - name: Verificar arquivos
+        run: ls -la
+
       - name: Construir imagem Docker
         run: docker build -t meu-app:latest .
+        working-directory: ./
